@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+	font-family: 'DejaVu';
+	src: url('/src/assets/fonts/DejaVuSans.ttf') format('truetype'); /* Путь к шрифту */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ArmOmega';
+	src: url('/src/assets/fonts/ArmomegaU.ttf') format('truetype'); /* Путь к шрифту */
+	font-weight: normal;
+	font-style: normal;
+}
