@@ -1,9 +1,12 @@
 import React from 'react';
-import faceBookIcon from '../../../assets/svgs/icons/facebook-icon.svg';
-import instagramIcon from '../../../assets/svgs/icons/instagram-icon.svg';
-import phoneIcon from '../../../assets/svgs/icons/phone-icon.svg';
-import logo from '../../../assets/svgs/logo.svg';
-import { IconsButton } from '../../../index';
+import {
+	BurgerMenu,
+	IconsButton,
+	faceBookIcon,
+	instagramIcon,
+	logo,
+	phoneIcon,
+} from '../../../index';
 
 const Header = () => {
 	return (
@@ -34,6 +37,7 @@ const Header = () => {
 				/>
 				<IconsButton image={phoneIcon} />
 			</div>
+			<BurgerMenu />
 		</div>
 	);
 };

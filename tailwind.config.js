@@ -5,16 +5,16 @@ export default {
 		extend: {
 			colors: {
 				primaryLightBlue: 'rgb(71 104 142)',
+				deepWhite: 'rgb(250 250 250)',
 			},
 			fontFamily: {
 				DejaVu: ['DejaVu', 'sans-serif'],
-			},
-			fontFamily: {
 				ArmOmega: ['ArmOmega', 'sans-serif'],
 			},
 			screens: {
 				'max-w-2xl-1440': { max: '1440px' },
 				'max-w-xl-1024': { max: '1024px' },
+				'max-w-sm-600': { max: '600px' },
 			},
 		},
 	},
