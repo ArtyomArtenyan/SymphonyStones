@@ -15,6 +15,7 @@ export default {
 				'max-w-2xl-1440': { max: '1440px' },
 				'max-w-xl-1024': { max: '1024px' },
 				'max-w-sm-600': { max: '600px' },
+				'max-w-ss-480': { max: '480px' },
 			},
 		},
 	},
