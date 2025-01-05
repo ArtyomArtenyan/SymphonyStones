@@ -11,6 +11,7 @@ import logo from './assets/svgs/logo.svg';
 import IconsButton from './components/common/IconsButton/IconsButton.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
+import Home from './components/pages/Home/Home.jsx';
 
 // images
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
@@ -43,6 +44,7 @@ export {
 	gpsIcon,
 	Header,
 	Hero_Section_Img,
+	Home,
 	icon1,
 	icon2,
 	icon3,
