@@ -1,35 +1,36 @@
 /// Home page info ///
-import {
-	faceBookIcon,
-	gpsIcon,
-	Hero_Section_Img,
-	icon1,
-	icon2,
-	icon3,
-	icon4,
-	icon5,
-	icon6,
-	instagramIcon,
-	phoneIcon,
-	project1,
-	project10,
-	project11,
-	project12,
-	project2,
-	project3,
-	project4,
-	project5,
-	project6,
-	project7,
-	project8,
-	project9,
-} from '../index';
+import project1 from '../assets/images/homePage/Image Container-1.jpeg';
+import project10 from '../assets/images/homePage/Image Container-10.jpeg';
+import project11 from '../assets/images/homePage/Image Container-11.jpeg';
+import project12 from '../assets/images/homePage/Image Container-12.jpeg';
+import project2 from '../assets/images/homePage/Image Container-2.jpeg';
+import project3 from '../assets/images/homePage/Image Container-3.jpeg';
+import project4 from '../assets/images/homePage/Image Container-4.jpeg';
+import project5 from '../assets/images/homePage/Image Container-5.jpeg';
+import project6 from '../assets/images/homePage/Image Container-6.jpeg';
+import project7 from '../assets/images/homePage/Image Container-7.jpeg';
+import project8 from '../assets/images/homePage/Image Container-8.jpeg';
+import project9 from '../assets/images/homePage/Image Container-9.jpeg';
+import Hero_Section_Img from '../assets/images/homePage/main-image.png';
 
-export const Hero_Section = {
-	title: 'Symphony Stone',
+import faceBookIcon from '../assets/svgs/icons/facebook-icon.svg';
+import gpsIcon from '../assets/svgs/icons/gps.svg';
+import instagramIcon from '../assets/svgs/icons/instagram-icon.svg';
+import phoneIcon from '../assets/svgs/icons/phone-icon.svg';
+import icon1 from '../assets/svgs/icons/property-icon1.svg';
+import icon2 from '../assets/svgs/icons/property-icon2.svg';
+import icon3 from '../assets/svgs/icons/property-icon3.svg';
+import icon4 from '../assets/svgs/icons/property-icon4.svg';
+import icon5 from '../assets/svgs/icons/property-icon5.svg';
+import icon6 from '../assets/svgs/icons/property-icon6.svg';
+
+export let Hero_Section = {
+	title1: 'Symphony',
+	title2: ' Stone',
 	description:
 		'Գեղեցիկ բակ ունենալու համար պետք է ընտրել որակյալ արտադրանք։ Symphony Stone-ը առաջարկում է բարձրորակ բետոնե սալիկների լայն տեսականի անմիջապես արտադրողից։ Պատվերների համար կարող եք զանգահարել։',
 	img: Hero_Section_Img,
+	buttonText: 'Զանգահարել',
 };
 export const our_Work_Section_title = 'Մեր աշխատանքները';
 export const our_Work_Section = [
@@ -88,74 +89,23 @@ export const Contact_Us_Section = {
 	socialLinks: [
 		{
 			id: 1,
-			icon: <IconsButton image={phoneIcon} href='tel:+37493220380' />,
+			icon: phoneIcon,
 			link: 'tel:+37493220380',
 		},
 		{
 			id: 2,
-			icon: <IconsButton image={gpsIcon} href='https://goo.gl/maps/xyz' />,
+			icon: gpsIcon,
 			link: 'https://goo.gl/maps/xyz',
 		},
 		{
 			id: 3,
-			icon: (
-				<IconsButton
-					image={faceBookIcon}
-					href='https://www.facebook.com/SymphonyStone'
-				/>
-			),
+			icon: faceBookIcon,
 			link: 'https://www.facebook.com/SymphonyStone',
 		},
 		{
 			id: 4,
-			icon: (
-				<IconsButton
-					image={instagramIcon}
-					href='https://www.instagram.com/symphony.stone'
-				/>
-			),
+			icon: instagramIcon,
 			link: 'https://www.instagram.com/symphony.stone',
 		},
 	],
 };
-// // products.js
-// export const products = [
-//   {
-//     id: 1,
-//     name: "Тротуарная плитка",
-//     description: "Высокое качество и уникальный дизайн.",
-//     image: "/assets/images/product1.jpg",
-//   },
-//   {
-//     id: 2,
-//     name: "Облицовочные плиты",
-//     description: "Идеально для фасадов и интерьеров.",
-//     image: "/assets/images/product2.jpg",
-//   },
-//   {
-//     id: 3,
-//     name: "Декоративные элементы",
-//     description: "Для уникального ландшафтного дизайна.",
-//     image: "/assets/images/product3.jpg",
-//   },
-// ];
-
-// // Social media links
-// export const socialLinks = {
-//   facebook: "https://facebook.com/symphonystone",
-//   instagram: "https://instagram.com/symphonystone",
-// };
-
-// // Contact information
-// export const contactInfo = {
-//   phone: "+374 (91) 123-456",
-//   email: "info@symphonystones.am",
-//   address: "г. Веди, ул. Примерная 1",
-// };
-
-// // About Us info
-// export const aboutUs = {
-//   title: "О компании Symphony Stone",
-//   description:
-//     "Мы создаем бетонные изделия с уникальным дизайном для вашего дома и сада. Мы используем высококачественные материалы и современные технологии производства.",
-// };

@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				primaryLightBlue: 'rgb(71 104 142)',
+				primaryDarkBlue: 'rgb(44 63 84)',
 				deepWhite: 'rgb(250 250 250)',
 			},
 			fontFamily: {

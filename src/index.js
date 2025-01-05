@@ -1,4 +1,4 @@
-// SVG
+// SVG imports
 import CloseIcon from './assets/svgs/icons/close.svg';
 import faceBookIcon from './assets/svgs/icons/facebook-icon.svg';
 import gpsIcon from './assets/svgs/icons/gps.svg';
@@ -7,13 +7,14 @@ import instagramIcon from './assets/svgs/icons/instagram-icon.svg';
 import phoneIcon from './assets/svgs/icons/phone-icon.svg';
 import logo from './assets/svgs/logo.svg';
 
-// Components
+// Component imports
+import Button from './components/common/Button/Button.jsx';
 import IconsButton from './components/common/IconsButton/IconsButton.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
 import Home from './components/pages/Home/Home.jsx';
 
-// images
+// Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
 import project10 from './assets/images/homePage/Image Container-10.jpeg';
 import project11 from './assets/images/homePage/Image Container-11.jpeg';
@@ -28,7 +29,7 @@ import project8 from './assets/images/homePage/Image Container-8.jpeg';
 import project9 from './assets/images/homePage/Image Container-9.jpeg';
 import Hero_Section_Img from './assets/images/homePage/main-image.png';
 
-// icons
+// Icon imports
 import icon1 from './assets/svgs/icons/property-icon1.svg';
 import icon2 from './assets/svgs/icons/property-icon2.svg';
 import icon3 from './assets/svgs/icons/property-icon3.svg';
@@ -36,9 +37,11 @@ import icon4 from './assets/svgs/icons/property-icon4.svg';
 import icon5 from './assets/svgs/icons/property-icon5.svg';
 import icon6 from './assets/svgs/icons/property-icon6.svg';
 
+// Export all the imports
 export {
 	BurgerMenu,
 	BurgerMenuIcon,
+	Button,
 	CloseIcon,
 	faceBookIcon,
 	gpsIcon,

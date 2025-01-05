@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
 	font-family: 'DejaVu';
 	src: url('/src/assets/fonts/DejaVuSans.ttf') format('truetype');
@@ -13,4 +12,7 @@
 	src: url('/src/assets/fonts/ArmomegaU.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+:root {
+	font-family: 'DejaVu', sans-serif;
 }
