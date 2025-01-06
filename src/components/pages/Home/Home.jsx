@@ -1,12 +1,16 @@
 import React from 'react';
-import HeroSection from './HeroSection';
-import OurWorkSection from './OurWorkSection';
+import {
+	HeroSection,
+	OurWorkSection,
+	WhySymphonyStoneSection,
+} from '../../../index';
 
 const Home = () => {
 	return (
 		<div>
 			<HeroSection />
 			<OurWorkSection />
+			<WhySymphonyStoneSection />
 		</div>
 	);
 };

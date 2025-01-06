@@ -47,6 +47,9 @@ export const our_Work_Section = [
 	project11,
 	project12,
 ];
+export const Why_Symphony_Stone_Section_title =
+	'Ինչո՞ւ ընտրել Symphony Stone-ի սալիկները';
+
 export const Why_Symphony_Stone_Section = [
 	{
 		id: 1,

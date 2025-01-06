@@ -13,7 +13,11 @@ import Dot from './components/common/Dot/Dot.jsx';
 import IconsButton from './components/common/IconsButton/IconsButton.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
+//Home Component imports
+import WhySymphonyStoneSection from './components/common/WhySymphonyStone/WhySymphonyStoneSection.jsx';
+import HeroSection from './components/pages/Home/HeroSection.jsx';
 import Home from './components/pages/Home/Home.jsx';
+import OurWorkSection from './components/pages/Home/OurWorkSection.jsx';
 
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
@@ -49,6 +53,7 @@ export {
 	gpsIcon,
 	Header,
 	Hero_Section_Img,
+	HeroSection,
 	Home,
 	icon1,
 	icon2,
@@ -59,6 +64,7 @@ export {
 	IconsButton,
 	instagramIcon,
 	logo,
+	OurWorkSection,
 	phoneIcon,
 	project1,
 	project10,
@@ -72,4 +78,5 @@ export {
 	project7,
 	project8,
 	project9,
+	WhySymphonyStoneSection,
 };
