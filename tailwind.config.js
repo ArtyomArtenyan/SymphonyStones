@@ -7,6 +7,7 @@ export default {
 				primaryLightBlue: 'rgb(71 104 142)',
 				primaryDarkBlue: 'rgb(44 63 84)',
 				deepWhite: 'rgb(250 250 250)',
+				deepDarkBlue: 'rgb(16 23 31)',
 			},
 			fontFamily: {
 				DejaVu: ['DejaVu', 'sans-serif'],

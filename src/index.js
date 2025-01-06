@@ -6,11 +6,13 @@ import BurgerMenuIcon from './assets/svgs/icons/hamburger.svg';
 import instagramIcon from './assets/svgs/icons/instagram-icon.svg';
 import phoneIcon from './assets/svgs/icons/phone-icon.svg';
 import logo from './assets/svgs/logo.svg';
+import white_logo from './assets/svgs/white-logo.svg';
 
 // Component imports
 import Button from './components/common/Button/Button.jsx';
 import Dot from './components/common/Dot/Dot.jsx';
 import IconsButton from './components/common/IconsButton/IconsButton.jsx';
+import Footer from './components/layout/Footer/Footer.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
 //Home Component imports
@@ -52,6 +54,7 @@ export {
 	ContactUsSection,
 	Dot,
 	faceBookIcon,
+	Footer,
 	gpsIcon,
 	Header,
 	Hero_Section_Img,
@@ -80,5 +83,6 @@ export {
 	project7,
 	project8,
 	project9,
+	white_logo,
 	WhySymphonyStoneSection,
 };

@@ -5,7 +5,7 @@ import IconsButton from '../IconsButton/IconsButton';
 const ContactUsSection = ({ teg }) => {
 	return (
 		<div>
-			<div className='px-[240px] flex max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10 max-w-ss-480:px-5 max-w-xl-1024:flex-col'>
+			<div className='px-[240px] mb-20 flex max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10 max-w-xl-1024:mb10 max-w-ss-480:px-5 max-w-xl-1024:flex-col'>
 				<div className=' relative w-full h-[480px] max-w-xl-1024:h-[400px] max-w-ss-480:h-[240px]'>
 					{teg}
 				</div>
