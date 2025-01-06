@@ -8,9 +8,9 @@ import { Dot } from '../../../index.js';
 const OurWorkSection = () => {
 	return (
 		<div className=' flex flex-col gap-10 px-[240px] max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10 max-w-ss-480:px-5 '>
-			<div className='flex justify-center items-center gap-3 h-[42px] max-w-xl-1024:h-9'>
+			<div className='flex justify-center items-center gap-3 '>
 				<Dot />
-				<h1 className='font-ArmOmega text-[28px] text-primaryDarkBlue leading-none max-w-xl-1024:text-[24px] max-w-ss-480:text-xl'>
+				<h1 className='font-ArmOmega text-[28px] text-primaryDarkBlue  max-w-xl-1024:text-[24px] max-w-ss-480:text-xl'>
 					{our_Work_Section_title}
 				</h1>
 				<Dot />

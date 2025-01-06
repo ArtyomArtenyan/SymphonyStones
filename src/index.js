@@ -14,6 +14,7 @@ import IconsButton from './components/common/IconsButton/IconsButton.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
 //Home Component imports
+import ContactUsSection from './components/common/ContactUs/ContactUsSection.jsx';
 import WhySymphonyStoneSection from './components/common/WhySymphonyStone/WhySymphonyStoneSection.jsx';
 import HeroSection from './components/pages/Home/HeroSection.jsx';
 import Home from './components/pages/Home/Home.jsx';
@@ -48,6 +49,7 @@ export {
 	BurgerMenuIcon,
 	Button,
 	CloseIcon,
+	ContactUsSection,
 	Dot,
 	faceBookIcon,
 	gpsIcon,

@@ -1,4 +1,5 @@
 /// Home page info ///
+import Hero_Section_bottom_image from '../assets/images/homePage/bottom-image.png';
 import project1 from '../assets/images/homePage/Image Container-1.jpeg';
 import project10 from '../assets/images/homePage/Image Container-10.jpeg';
 import project11 from '../assets/images/homePage/Image Container-11.jpeg';
@@ -85,30 +86,34 @@ export const Why_Symphony_Stone_Section = [
 
 export const Contact_Us_Section = {
 	title: 'Շտապեք ձեռք բերել ամենամատչելի գներով',
+	img: Hero_Section_bottom_image,
 	description:
 		'Պատվերների և հարցերի համար գրեք մեր Ֆեյսբուքյան կամ ինստագրամյան էջերին կամ զանգահարեք:',
-	phone: '+374 93220380',
-	address: 'Ք.Արարատ, Ս.Աղբյուր փ.12/1',
+
 	socialLinks: [
 		{
 			id: 1,
 			icon: phoneIcon,
 			link: 'tel:+37493220380',
+			text: '+374 93220380',
 		},
 		{
 			id: 2,
 			icon: gpsIcon,
 			link: 'https://goo.gl/maps/xyz',
+			text: 'Ք.Արարատ, Ս.Աղբյուր փ.12/1',
 		},
 		{
 			id: 3,
 			icon: faceBookIcon,
 			link: 'https://www.facebook.com/SymphonyStone',
+			text: 'Symphony Stone',
 		},
 		{
 			id: 4,
 			icon: instagramIcon,
 			link: 'https://www.instagram.com/symphony.stone',
+			text: 'Symphony Stone',
 		},
 	],
 };
