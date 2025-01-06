@@ -41,7 +41,7 @@ export const socialLinks = [
 	},
 ];
 
-/// Home page info ///
+/// Home page info and imports ///
 import Hero_Section_bottom_image from '../assets/images/homePage/bottom-image.png';
 import project1 from '../assets/images/homePage/Image Container-1.jpeg';
 import project10 from '../assets/images/homePage/Image Container-10.jpeg';
@@ -56,7 +56,6 @@ import project7 from '../assets/images/homePage/Image Container-7.jpeg';
 import project8 from '../assets/images/homePage/Image Container-8.jpeg';
 import project9 from '../assets/images/homePage/Image Container-9.jpeg';
 import Hero_Section_Img from '../assets/images/homePage/main-image.png';
-
 import faceBookIcon from '../assets/svgs/icons/facebook-icon.svg';
 import gpsIcon from '../assets/svgs/icons/gps.svg';
 import instagramIcon from '../assets/svgs/icons/instagram-icon.svg';
@@ -67,6 +66,8 @@ import icon3 from '../assets/svgs/icons/property-icon3.svg';
 import icon4 from '../assets/svgs/icons/property-icon4.svg';
 import icon5 from '../assets/svgs/icons/property-icon5.svg';
 import icon6 from '../assets/svgs/icons/property-icon6.svg';
+///AboutUs page imports///
+import About_image from '../assets/images/aboutUsPage/about-image.png';
 
 export let Hero_Section = {
 	title1: 'Symphony',
@@ -159,4 +160,14 @@ export const Contact_Us_Section = {
 			text: 'Symphony Stone',
 		},
 	],
+};
+
+///AboutUs page info///
+
+export const About_Us_Hero_Section = {
+	pageName: 'Մեր մասին',
+	title: 'Symphony Stone',
+	description:
+		'Symphony Stone ընկերությունը հիմնադրվել է 2023թ-ին Հայաստանի Հանրապետության Արարատի մարզի Արարատ քաղաքում: Ընկերությունը կարողանում է առաջարկել ոլորտում մրցունակ և նմանը չունեցող ցածր գներ: Բազմաթիվ կազմակերպությունների, հիմնարկների ու հաստատությունների համար մեր ընկերությունն իրականացնում է մայթերի սալիկների արտադրության, դրանց տեղադրման ծառայությունների մատուցման աշխատանքներ, որն էլ իր հերթին հնարավորություն է տալիս մեր մասնագետներին ազատ մրցակցել քարերի արտադրության շուկայում՝ պահպանելով արտադրության ծավալի աճի բարձր ցուցանիշները: Մեր ընկերությունը պատրաստ է ծառայություններ մատուցել Հայաստանի Հանրապետության ամբողջ տարածքում: Անկախ նրանից, որ մեր գրասենյակը գտնվում է Արարատի մարզի Արարատ քաղաքում, մենք ունենք համապատասխան գործիքներ, մեքենաներ և ամենակարևորը մասնագետների խումբ, ովքեր արագ և որակով կսպասարկեն ամենապահանջկոտ հաճախորդին: Մեր հաճախորդներից շատերը դառնում են մշտական գործընկերներ և խորհուրդ են տալիս իրենց ծանոթներին, ընկերներին, գործընկերներին և հարազատներին դիմել մեզ, իսկ մեզ ընտրում են բարի համբավի, որակի ապահովման և պատրաստի արտադրության երկարակեցության համար։ Մանրամասներին, ինչպես նաև գներին կարող եք ծանոթանալ՝ զանգահարելով կամ մոտենալով մեր գրասենյակ:',
+	image: About_image,
 };

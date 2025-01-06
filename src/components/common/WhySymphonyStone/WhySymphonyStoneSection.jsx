@@ -9,7 +9,7 @@ import IconsButton from '../IconsButton/IconsButton';
 const WhySymphonyStoneSection = () => {
 	return (
 		<div>
-			<div className='px-[240px] my-20 flex flex-col gap-10 max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10  max-w-xl-1024:my-10 max-w-ss-480:px-5 '>
+			<div className=' flex flex-col gap-10'>
 				<div className='flex justify-center items-center gap-3 w-full h-[42px] max-w-xl-1024:h-9'>
 					<Dot />
 					<h1 className='font-ArmOmega text-[28px] text-center text-primaryDarkBlue leading-none max-w-xl-1024:text-[24px] max-w-ss-480:text-xl'>
