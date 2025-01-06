@@ -25,6 +25,9 @@ import OurWorkSection from './components/pages/Home/OurWorkSection.jsx';
 //AboutUs Component imports
 import AboutUs from './components/pages/AboutUs/AboutUs.jsx';
 import AboutUsHeroSection from './components/pages/AboutUs/AboutUsHeroSection.jsx';
+//Contact components
+import Contact from './components/pages/Contact/Contact.jsx';
+import ContactSection from './components/pages/Contact/ContactSection.jsx';
 
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
@@ -57,6 +60,8 @@ export {
 	BurgerMenuIcon,
 	Button,
 	CloseIcon,
+	Contact,
+	ContactSection,
 	ContactUsSection,
 	Dot,
 	faceBookIcon,

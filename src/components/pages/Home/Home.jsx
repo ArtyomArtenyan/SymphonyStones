@@ -13,15 +13,17 @@ const Home = () => {
 			<HeroSection />
 			<OurWorkSection />
 			<WhySymphonyStoneSection />
-			<ContactUsSection
-				teg={
-					<img
-						className='absolute w-full h-full inset-0 object-cover'
-						src={Contact_Us_Section.img}
-						alt=''
-					/>
-				}
-			/>
+			<div className='my-20 max-w-xl-1024:my-10'>
+				<ContactUsSection
+					teg={
+						<img
+							className='absolute w-full h-full inset-0 object-cover'
+							src={Contact_Us_Section.img}
+							alt=''
+						/>
+					}
+				/>
+			</div>
 		</div>
 	);
 };

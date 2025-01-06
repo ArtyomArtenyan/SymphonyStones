@@ -5,7 +5,7 @@ import IconsButton from '../IconsButton/IconsButton';
 const ContactUsSection = ({ teg }) => {
 	return (
 		<div>
-			<div className='flex mt-20 max-w-xl-1024:flex-col max-w-xl-1024:my-10'>
+			<div className='flex  max-w-xl-1024:flex-col'>
 				<div className=' relative w-full h-[480px] max-w-xl-1024:h-[400px] max-w-ss-480:h-[240px]'>
 					{teg}
 				</div>
