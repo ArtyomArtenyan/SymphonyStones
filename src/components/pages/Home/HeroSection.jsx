@@ -2,7 +2,7 @@ import React from 'react';
 import { Hero_Section } from '../../../dataBase/data';
 import { Button } from '../../../index';
 
-const Home = () => {
+const HeroSection = () => {
 	return (
 		<div>
 			<div className='px-[240px] my-20 flex max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10  max-w-xl-1024:my-10 max-w-ss-480:px-5 max-w-xl-1024:flex-col'>
@@ -27,4 +27,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HeroSection;

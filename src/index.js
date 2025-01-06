@@ -9,6 +9,7 @@ import logo from './assets/svgs/logo.svg';
 
 // Component imports
 import Button from './components/common/Button/Button.jsx';
+import Dot from './components/common/Dot/Dot.jsx';
 import IconsButton from './components/common/IconsButton/IconsButton.jsx';
 import BurgerMenu from './components/layout/Header/BurgerMenu.jsx';
 import Header from './components/layout/Header/Header';
@@ -43,6 +44,7 @@ export {
 	BurgerMenuIcon,
 	Button,
 	CloseIcon,
+	Dot,
 	faceBookIcon,
 	gpsIcon,
 	Header,
