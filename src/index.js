@@ -22,6 +22,10 @@ import HeroSection from './components/pages/Home/HeroSection.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import OurWorkSection from './components/pages/Home/OurWorkSection.jsx';
 
+//AboutUs Component imports
+import AboutUs from './components/pages/AboutUs/AboutUs.jsx';
+import AboutUsHeroSection from './components/pages/AboutUs/AboutUsHeroSection.jsx';
+
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
 import project10 from './assets/images/homePage/Image Container-10.jpeg';
@@ -47,6 +51,8 @@ import icon6 from './assets/svgs/icons/property-icon6.svg';
 
 // Export all the imports
 export {
+	AboutUs,
+	AboutUsHeroSection,
 	BurgerMenu,
 	BurgerMenuIcon,
 	Button,

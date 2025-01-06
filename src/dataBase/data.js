@@ -1,3 +1,46 @@
+///Header Info///
+export const nav = [
+	{
+		name: 'Գլխավոր',
+		url: '',
+	},
+	{
+		name: 'Արտադրանք',
+		url: 'products',
+	},
+	{
+		name: 'Մեր մասին',
+		url: 'about',
+	},
+	{
+		name: 'Կապ',
+		url: 'contact',
+	},
+];
+export const socialLinks = [
+	{
+		id: 1,
+		name: 'Facebook',
+		icon: faceBookIcon,
+		href: 'https://www.facebook.com/people/Symphony-Stone/61565963601342/?mibextid=LQQJ4d&rdid=9wieZKzhqhhFCb6f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F7Z46P4dT61QiACzD%2F%3Fmibextid%3DLQQJ4d',
+		bgColor: 'bg-primaryLightBlue',
+	},
+	{
+		id: 2,
+		name: 'instagramIcon',
+		icon: instagramIcon,
+		href: 'https://www.instagram.com/symphonystone90/profilecard/?igsh=MWxqdjc3dXlpOXNjZg%3D%3D',
+		bgColor: 'bg-primaryLightBlue',
+	},
+	{
+		id: 3,
+		name: 'Phone',
+		icon: phoneIcon,
+		href: 'tel:+37493220380',
+		bgColor: 'bg-primaryLightBlue',
+	},
+];
+
 /// Home page info ///
 import Hero_Section_bottom_image from '../assets/images/homePage/bottom-image.png';
 import project1 from '../assets/images/homePage/Image Container-1.jpeg';

@@ -1,35 +1,7 @@
 import React from 'react';
-import {
-	BurgerMenu,
-	faceBookIcon,
-	IconsButton,
-	instagramIcon,
-	logo,
-	phoneIcon,
-} from '../../../index';
-const socialLinks = [
-	{
-		id: 1,
-		name: 'Facebook',
-		icon: faceBookIcon,
-		href: 'https://www.facebook.com/people/Symphony-Stone/61565963601342/?mibextid=LQQJ4d&rdid=9wieZKzhqhhFCb6f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F7Z46P4dT61QiACzD%2F%3Fmibextid%3DLQQJ4d',
-		bgColor: 'bg-primaryLightBlue',
-	},
-	{
-		id: 2,
-		name: 'instagramIcon',
-		icon: instagramIcon,
-		href: 'https://www.instagram.com/symphonystone90/profilecard/?igsh=MWxqdjc3dXlpOXNjZg%3D%3D',
-		bgColor: 'bg-primaryLightBlue',
-	},
-	{
-		id: 3,
-		name: 'Phone',
-		icon: phoneIcon,
-		href: 'tel:+37493220380',
-		bgColor: 'bg-primaryLightBlue',
-	},
-];
+import { NavLink } from 'react-router-dom';
+import { nav, socialLinks } from '../../../dataBase/data';
+import { BurgerMenu, IconsButton, logo } from '../../../index';
 
 const Header = () => {
 	return (
@@ -39,10 +11,17 @@ const Header = () => {
 			</div>
 			<div className='flex max-w-xl-1024:hidden'>
 				<ul className='flex font-DejaVu gap-[64px]'>
-					<li>Գլխավոր</li>
-					<li>Արտադրանք</li>
-					<li>Մեր մասին</li>
-					<li>Կապ</li>
+					{nav.map((el, i) => (
+						<NavLink
+							key={i}
+							to={`/${el.url}`}
+							className={({ isActive }) =>
+								isActive ? 'text-primaryDarkBlue' : ''
+							}
+						>
+							{el.name}
+						</NavLink>
+					))}
 				</ul>
 			</div>
 			<div className='flex items-center justify-center gap-3 max-w-xl-1024:hidden'>
