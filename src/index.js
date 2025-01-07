@@ -33,6 +33,7 @@ import ContactSection from './components/pages/Contact/ContactSection.jsx';
 //Products components
 import Products from './components/pages/Products/Products.jsx';
 import ProductsSection from './components/pages/Products/ProductsSection.jsx';
+import ProductsList from './components/pages/Products/ProductsList.jsx';
 
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
@@ -60,6 +61,7 @@ import icon6 from './assets/svgs/icons/property-icon6.svg';
 // Export all the imports
 export {
 	AboutUs,
+	ProductsList,
 	AboutUsHeroSection,
 	BurgerMenu,
 	BurgerMenuIcon,

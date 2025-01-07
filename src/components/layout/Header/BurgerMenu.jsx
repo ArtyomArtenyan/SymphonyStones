@@ -13,6 +13,10 @@ const BurgerMenu = () => {
 	function toggleMenu() {
 		setIsOpen(!isOpen);
 	}
+	if (isOpen) {
+		document.body.style.overflow = 'hidden';
+	} else document.body.style.overflow = 'auto';
+
 	return (
 		<div className='hidden max-w-xl-1024:block'>
 			<button onClick={toggleMenu}>
