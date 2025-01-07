@@ -32,9 +32,9 @@ import ContactSection from './components/pages/Contact/ContactSection.jsx';
 
 //Products components
 import Products from './components/pages/Products/Products.jsx';
-import ProductsSection from './components/pages/Products/ProductsSection.jsx';
 import ProductsList from './components/pages/Products/ProductsList.jsx';
-
+import ProductsPagination from './components/pages/Products/ProductsPagination.jsx';
+import ProductsSection from './components/pages/Products/ProductsSection.jsx';
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
 import project10 from './assets/images/homePage/Image Container-10.jpeg';
@@ -61,7 +61,6 @@ import icon6 from './assets/svgs/icons/property-icon6.svg';
 // Export all the imports
 export {
 	AboutUs,
-	ProductsList,
 	AboutUsHeroSection,
 	BurgerMenu,
 	BurgerMenuIcon,
@@ -90,6 +89,8 @@ export {
 	OurWorkSection,
 	phoneIcon,
 	Products,
+	ProductsList,
+	ProductsPagination,
 	ProductsSection,
 	project1,
 	project10,
