@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import {
-	BurgerMenuIcon,
-	CloseIcon,
-	IconsButton,
-	faceBookIcon,
-	instagramIcon,
-	phoneIcon,
-} from '../../../index.js';
+import { NavLink } from 'react-router';
+import { nav, socialLinks } from '../../../dataBase/data.js';
+import { BurgerMenuIcon, CloseIcon, IconsButton } from '../../../index.js';
 
 const BurgerMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -31,25 +26,28 @@ const BurgerMenu = () => {
 					<img src={CloseIcon} alt='' />
 				</button>
 				<ul className='flex w-[240px] flex-col gap-10'>
-					<li className='text-md cursor-pointer font-DejaVu'>Գլխավոր</li>
-					<li className='text-md cursor-pointer font-DejaVu'>Արտադրանք</li>
-					<li className='text-md cursor-pointer font-DejaVu'>Մեր մասին</li>
-					<li className='text-md cursor-pointer font-DejaVu'>Կապ</li>
+					{nav.map((el, i) => (
+						<NavLink
+							onClick={toggleMenu}
+							key={i}
+							to={`/${el.url}`}
+							className={({ isActive }) =>
+								isActive ? 'text-primaryDarkBlue' : ''
+							}
+						>
+							{el.name}
+						</NavLink>
+					))}
 				</ul>
 				<div className='flex gap-3'>
-					<IconsButton
-						image={faceBookIcon}
-						href={
-							'https://www.facebook.com/people/Symphony-Stone/61565963601342/?mibextid=LQQJ4d&rdid=9wieZKzhqhhFCb6f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F7Z46P4dT61QiACzD%2F%3Fmibextid%3DLQQJ4d'
-						}
-					/>
-					<IconsButton
-						image={instagramIcon}
-						href={
-							'https://www.instagram.com/symphonystone90/profilecard/?igsh=MWxqdjc3dXlpOXNjZg%3D%3D'
-						}
-					/>
-					<IconsButton image={phoneIcon} />
+					{socialLinks.map(link => (
+						<div
+							key={link.id}
+							className={`flex items-center w-10 h-10 border-none rounded-full justify-center ${link.bgColor}`}
+						>
+							<IconsButton image={link.icon} href={link.href} />
+						</div>
+					))}
 				</div>
 			</div>
 			{isOpen && (

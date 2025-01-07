@@ -209,146 +209,8 @@ import products_image_8 from '../assets/images/productsPage/image-8.jpeg';
 import products_image_9 from '../assets/images/productsPage/image-9.jpeg';
 import products_image from '../assets/images/productsPage/image.jpeg';
 
-// 	{
-// 		id: 1,
-// 		name: "Բետոնե սալաքար 'брусчатка бетонная вибропрессованная'",
-// 		image: products_image_11,
+export const productsType = ['Բոլորը', 'Սալաքար', 'Եզրաքար', 'Բլոկ'];
 
-// 		size: '238x158x60',
-// 	},
-// 	{
-// 		id: 2,
-// 		name: "Սալահատակ քառակուսի 'тротуарная плитка вибропрессованный квадрат'",
-// 		image: products_image_12,
-// 		size: '238x158x60',
-// 	},
-// 	{
-// 		id: 3,
-// 		name: "Ալիքային սալահատակ 'тротуарная плитка вибропрессованная волна'",
-// 		image: products_image_13,
-// 		size: '115x170',
-// 	},
-// 	{
-// 		id: 4,
-// 		name: "Բետոնե սալաքար COLORMIX 'брусчатка Калахари'",
-// 		image: products_image_14,
-// 		size: '115x170',
-// 	},
-// 	{
-// 		id: 5,
-// 		name: "Բետոնե սալաքար COLORMIX 'брусчатка Капучино'",
-// 		image: products_image_15,
-// 		size: '115x170',
-// 	},
-// 	{
-// 		id: 6,
-// 		name: "Բետոնե սալաքար COLORMIX 'брусчатка Эспрессо'",
-// 		image: products_image_16,
-// 		size: '115x170',
-// 	},
-// 	{
-// 		id: 7,
-// 		name: "COLOR MIX 'Տուման'",
-// 		image: products_image_17,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 8,
-// 		name: "COLOR MIX 'Վեչեր'",
-// 		image: products_image_18,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 9,
-// 		name: "COLOR MIX 'Կոյոտ'",
-// 		image: products_image_19,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 10,
-// 		name: "COLOR MIX 'Մալվա'",
-// 		image: products_image_20,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 11,
-// 		name: "COLOR MIX 'Վենուսբերգեր'",
-// 		image: products_image_21,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 12,
-// 		name: "COLOR MIX 'Պեսչանիկ'",
-// 		image: products_image_22,
-// 		size: ['238x158x60', '158x158x60', '158x78x60'],
-// 	},
-// 	{
-// 		id: 13,
-// 		name: '«Հին քաղաք Կանյոն»',
-// 		image: products_image_23,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 14,
-// 		name: '«Հին քաղաք Սանրայզ»',
-// 		image: products_image_24,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 15,
-// 		name: '«Հին քաղաք Գրեյ»',
-// 		image: products_image_25,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 16,
-// 		name: '«Հին քաղաք Ոսկե»',
-// 		image: products_image_26,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 17,
-// 		name: '«Հին քաղաք Մոկկո»',
-// 		image: products_image_27,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 18,
-// 		name: '«Հին քաղաք Գավանա»',
-// 		image: products_image_28,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 19,
-// 		name: '«Հին քաղաք Բրաուն»',
-// 		image: products_image_29,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 20,
-// 		name: '«Հին քաղաք Դեղին»',
-// 		image: products_image_30,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 21,
-// 		name: '«Հին քաղաք Զակատ»',
-// 		image: products_image_31,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 22,
-// 		name: '«Հին քաղաք Սև»',
-// 		image: products_image_32,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// 	{
-// 		id: 23,
-// 		name: '«Հին քաղաք Մոխրագույն Կվարց»',
-// 		image: products_image_33,
-// 		size: ['115x170', '115x115', '115x85', '115x55'],
-// 	},
-// ];
 export const products = [
 	{
 		id: 1,
@@ -504,7 +366,7 @@ export const products = [
 		id: 26,
 		name: "3-ճեղքավոր խոռոչանի բլոկ 'Шлакоблок пустотелый 3-х щелевой'",
 		image: products_image_1,
-		size: '400x200x200',
+		size: '400x200x100',
 	},
 	{
 		id: 27,
@@ -516,7 +378,7 @@ export const products = [
 		id: 28,
 		name: "4-ճեղքավոր խոռոչով բլոկ 'Шлакоблок пустотелый 4-х щелевой'",
 		image: products_image_3,
-		size: '400x200x200',
+		size: '400x200x100',
 	},
 	{
 		id: 29,
@@ -534,7 +396,7 @@ export const products = [
 		id: 31,
 		name: "2-ճեղքավոր խոռոչանի գունավոր բլոկ 'Цветной стендовой блок''",
 		image: products_image_6,
-		size: '1000x300x150	',
+		size: '1000x300x150',
 	},
 	{
 		id: 32,
@@ -552,7 +414,7 @@ export const products = [
 		id: 34,
 		name: " Եզրաքար 'Бордюр садовый вибропрессованный'",
 		image: products_image_9,
-		size: '1000x300x80',
+		size: '1000x300x150',
 	},
 	{
 		id: 35,

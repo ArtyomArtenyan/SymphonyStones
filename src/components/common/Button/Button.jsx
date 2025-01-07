@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Button = ({ text, phoneNumber = '+37493220380' }) => {
+const Button = ({ text, color, icon, hendleClick }) => {
 	return (
-		<div>
-			<a href={`tel:${phoneNumber}`}>
-				<button className='bg-primaryLightBlue px-6 py-3 text-white'>
-					{text}
-				</button>
-			</a>
-		</div>
+		<button
+			onClick={hendleClick}
+			className={`bg-${color} px-6 py-3 text-white flex gap-3`}
+		>
+			{text}
+			<img src={icon} alt='' />
+		</button>
 	);
 };
 

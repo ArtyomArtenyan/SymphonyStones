@@ -31,6 +31,7 @@ import Contact from './components/pages/Contact/Contact.jsx';
 import ContactSection from './components/pages/Contact/ContactSection.jsx';
 
 //Products components
+import FilterButton from './components/pages/Products/FilterButton.jsx';
 import Products from './components/pages/Products/Products.jsx';
 import ProductsList from './components/pages/Products/ProductsList.jsx';
 import ProductsPagination from './components/pages/Products/ProductsPagination.jsx';
@@ -57,6 +58,7 @@ import icon3 from './assets/svgs/icons/property-icon3.svg';
 import icon4 from './assets/svgs/icons/property-icon4.svg';
 import icon5 from './assets/svgs/icons/property-icon5.svg';
 import icon6 from './assets/svgs/icons/property-icon6.svg';
+import settingIcon from './assets/svgs/icons/settings-icon.svg';
 
 // Export all the imports
 export {
@@ -71,6 +73,7 @@ export {
 	ContactUsSection,
 	Dot,
 	faceBookIcon,
+	FilterButton,
 	Footer,
 	gpsIcon,
 	Header,
@@ -104,6 +107,7 @@ export {
 	project7,
 	project8,
 	project9,
+	settingIcon,
 	white_logo,
 	WhySymphonyStoneSection,
 };

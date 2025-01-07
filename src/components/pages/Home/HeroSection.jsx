@@ -13,7 +13,9 @@ const HeroSection = () => {
 						{Hero_Section.title2}
 					</h1>
 					<p className='max-w-xl-1024:text-sm'>{Hero_Section.description}</p>
-					<Button text={Hero_Section.buttonText} />
+					<a href='tel:+37493220380'>
+						<Button text={Hero_Section.buttonText} color={'primaryLightBlue'} />
+					</a>
 				</div>
 				<div className=' relative w-full h-[480px] max-w-xl-1024:h-[400px] max-w-ss-480:h-[240px]'>
 					<img
