@@ -209,7 +209,21 @@ import products_image_8 from '../assets/images/productsPage/image-8.jpeg';
 import products_image_9 from '../assets/images/productsPage/image-9.jpeg';
 import products_image from '../assets/images/productsPage/image.jpeg';
 
-export const productsType = ['Բոլորը', 'Սալաքար', 'Եզրաքար', 'Բլոկ'];
+// export const productsType = ['Բոլորը', 'Սալաքար', 'Եզրաքար', 'Բլոկ'];
+export const productsType = [
+	{
+		id: 2,
+		name: 'Սալաքար',
+	},
+	{
+		id: 3,
+		name: 'Եզրաքար',
+	},
+	{
+		id: 4,
+		name: 'Բլոկ',
+	},
+];
 
 export const products = [
 	{

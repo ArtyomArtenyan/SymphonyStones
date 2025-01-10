@@ -1,49 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import { products } from '../../../dataBase/data';
+import React, { useState } from 'react';
 import {
 	Dot,
 	FilterButton,
 	ProductsList,
 	ProductsPagination,
+	useFilteredProducts,
 } from '../../../index';
-import FilterModal from './FilterModal';
+import FilterModal from './ModalFilter/FilterModal';
 
 const ProductsSection = () => {
 	const [currentPage, setCurrentPage] = useState(1);
 	const [isOpen, setIsOpen] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	const itemsInPage = 9;
 	const indexOfLastItem = currentPage * itemsInPage;
 	const indexOfFirstItem = indexOfLastItem - itemsInPage;
 
-	const [filteredProducts, setFilteredProducts] = useState(products);
-
 	const [selectedSizes, setSelectedSizes] = useState([]);
+	const [selectedTypes, setSelectedTypes] = useState([]);
 
-	const [isShow, setIsShow] = useState(false);
-	useEffect(() => {
-		let filtered = products.filter(product => {
-			const productSizes = Array.isArray(product.size)
-				? product.size
-				: [product.size];
-			let matches = false;
-			for (let j = 0; j < selectedSizes.length; j++) {
-				if (productSizes.includes(selectedSizes[j])) {
-					matches = true;
-					break;
-				}
-			}
-			return selectedSizes.length === 0 || matches;
-		});
-		setFilteredProducts(filtered);
-	}, [isShow]);
+	const filteredProducts = useFilteredProducts(
+		selectedSizes,
+		selectedTypes,
+		isOpen,
+		setLoading
+	);
+
 	const currentItems = filteredProducts.slice(
 		indexOfFirstItem,
 		indexOfLastItem
 	);
 	const totalPages = Math.ceil(filteredProducts.length / itemsInPage);
-
-	console.log(filteredProducts);
 
 	const changePages = pageNum => {
 		setCurrentPage(pageNum);
@@ -55,26 +43,36 @@ const ProductsSection = () => {
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
-		console.log('Menu toggled:', isOpen);
+		document.body.style.overflow = isOpen ? 'auto' : 'hidden';
 	};
-	if (isOpen) {
-		document.body.style.overflow = 'hidden';
-	} else document.body.style.overflow = 'auto';
 
 	const handleSizeSelectClick = size => {
 		setSelectedSizes(prevSizes => {
-			if (prevSizes.includes(size)) return prevSizes.filter(el => size !== el);
+			if (prevSizes.includes(size)) return prevSizes.filter(el => el !== size);
 			else return [...prevSizes, size];
 		});
 	};
 
-	const toggleShow = () => {
-		setIsShow(!isShow);
+	const handleSelectedTypeClick = name => {
+		if (name === 'Բոլորը') {
+			setSelectedTypes(['Բոլորը']);
+		} else {
+			setSelectedTypes(prev => {
+				const withoutMain = prev.filter(btnId => btnId !== 'Բոլորը');
+				if (withoutMain.includes(name)) {
+					return withoutMain.filter(btnId => btnId !== name);
+				} else {
+					return [...withoutMain, name];
+				}
+			});
+		}
 	};
 
 	const handleClear = () => {
 		setSelectedSizes([]);
+		setSelectedTypes([]);
 	};
+
 	return (
 		<div className='flex flex-col gap-10'>
 			<div className='flex justify-center items-center gap-3'>
@@ -84,24 +82,38 @@ const ProductsSection = () => {
 				</h1>
 				<Dot />
 			</div>
-			<FilterButton toggleMenu={toggleMenu} />
-			<ProductsList items={currentItems} />
-
+			{loading ? (
+				<div className='flex justify-center items-center h-[50vh]'>
+					<div className='loader'>Loading...</div>
+				</div>
+			) : filteredProducts.length === 0 ? (
+				<>
+					<div className='flex h-[50vh] w-full items-center justify-center text-center max-w-ss-480::text-md'>
+						Նշված ֆիլտրերով արտադրանք առկա չէ
+					</div>
+					<FilterButton toggleMenu={toggleMenu} />
+				</>
+			) : (
+				<>
+					<FilterButton toggleMenu={toggleMenu} />
+					<ProductsList items={currentItems} />
+					<ProductsPagination
+						totalPages={totalPages}
+						currentPage={currentPage}
+						pageClick={changePages}
+					/>
+				</>
+			)}
 			{isOpen && (
 				<FilterModal
 					toggleMenu={toggleMenu}
 					handleSizeSelectClick={handleSizeSelectClick}
+					handleSelectedTypeClick={handleSelectedTypeClick}
+					selectedTypes={selectedTypes}
 					selectedSizes={selectedSizes}
-					toggleShow={toggleShow}
 					handleClear={handleClear}
 				/>
 			)}
-
-			<ProductsPagination
-				totalPages={totalPages}
-				currentPage={currentPage}
-				pageClick={changePages}
-			/>
 		</div>
 	);
 };

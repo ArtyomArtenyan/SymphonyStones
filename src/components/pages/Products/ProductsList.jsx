@@ -2,8 +2,6 @@ import React from 'react';
 import Dot from '../../common/Dot/Dot';
 
 const ProductsList = ({ items }) => {
-	console.log(items);
-
 	return (
 		<div>
 			<div className='grid grid-cols-3 gap-x-4 gap-y-10 max-w-xl-1024:grid-cols-2 max-w-xl-1024:gap-y-6 max-w-ss-480:grid-cols-1'>

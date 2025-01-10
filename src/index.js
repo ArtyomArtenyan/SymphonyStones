@@ -31,11 +31,14 @@ import Contact from './components/pages/Contact/Contact.jsx';
 import ContactSection from './components/pages/Contact/ContactSection.jsx';
 
 //Products components
-import FilterButton from './components/pages/Products/FilterButton.jsx';
+import useFilteredProducts from './components/pages/Products/hooks/useFilteredProducts.jsx';
+import FiltersButtons from './components/pages/Products/ModalFilter/FilterButtons.jsx';
+import FilterButton from './components/pages/Products/ModalFilter/OpenFilterButton.jsx';
 import Products from './components/pages/Products/Products.jsx';
 import ProductsList from './components/pages/Products/ProductsList.jsx';
 import ProductsPagination from './components/pages/Products/ProductsPagination.jsx';
 import ProductsSection from './components/pages/Products/ProductsSection.jsx';
+
 // Image imports
 import project1 from './assets/images/homePage/Image Container-1.jpeg';
 import project10 from './assets/images/homePage/Image Container-10.jpeg';
@@ -74,6 +77,7 @@ export {
 	Dot,
 	faceBookIcon,
 	FilterButton,
+	FiltersButtons,
 	Footer,
 	gpsIcon,
 	Header,
@@ -108,6 +112,7 @@ export {
 	project8,
 	project9,
 	settingIcon,
+	useFilteredProducts,
 	white_logo,
 	WhySymphonyStoneSection,
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import { settingIcon } from '../../..';
-import Button from '../../common/Button/Button';
+import { settingIcon } from '../../../..';
+import Button from '../../../common/Button/Button';
 
 const FilterButton = ({ toggleMenu }) => {
 	return (
