@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router';
+import { IconsButton } from '../..';
+import { BurgerMenuIcon, CloseIcon } from '../../../assets/svgs';
 import { nav, socialLinks } from '../../../dataBase/data.js';
-import { BurgerMenuIcon, CloseIcon, IconsButton } from '../../../index.js';
 
 const BurgerMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);

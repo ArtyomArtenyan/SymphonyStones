@@ -1,11 +1,9 @@
 import React from 'react';
+import { Dot, IconsButton } from '../..';
 import {
 	Why_Symphony_Stone_Section,
 	Why_Symphony_Stone_Section_title,
 } from '../../../dataBase/data';
-import Dot from '../Dot/Dot';
-import IconsButton from '../IconsButton/IconsButton';
-
 const WhySymphonyStoneSection = () => {
 	return (
 		<div>

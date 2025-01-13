@@ -1,5 +1,6 @@
 import React from 'react';
-import { ContactUsSection, Dot } from '../../../index';
+import { ContactUsPage } from '../';
+import { Dot } from '../../components/';
 
 const ContactSection = () => {
 	return (
@@ -12,7 +13,7 @@ const ContactSection = () => {
 					</h1>
 					<Dot />
 				</div>
-				<ContactUsSection
+				<ContactUsPage
 					teg={
 						<iframe
 							src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3062.9316835318373!2d44.700606!3d39.853364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDUxJzEyLjEiTiA0NMKwNDInMDIuMiJF!5e0!3m2!1sen!2sam!4v1730192407945!5m2!1sen!2sam'

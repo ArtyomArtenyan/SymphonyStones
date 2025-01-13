@@ -1,6 +1,6 @@
 import React from 'react';
-import { Hero_Section } from '../../../dataBase/data';
-import { Button } from '../../../index';
+import { Button } from '../';
+import { Hero_Section } from '../../dataBase/data';
 
 const HeroSection = () => {
 	return (

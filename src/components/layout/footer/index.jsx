@@ -1,12 +1,12 @@
 import React from 'react';
-import { white_logo } from '../../..';
+import { WhiteLogo } from '../../../assets/svgs';
 
 const Footer = () => {
 	return (
 		<div>
 			<div className='flex flex-col items-center justify-center bg-deepDarkBlue gap-10 px-[240px] py-10 max-w-xl-1024:p-10 max-w-xl-1024:gap-6'>
 				<div className='flex flex-col justify-center items-center gap-4'>
-					<img src={white_logo} alt='' />
+					<img src={WhiteLogo} alt='' />
 					<p className='text-center font-ArmOmega text-white max-w-xl-1024:text-sm'>
 						Սալիկներ, որի հիմքում ընկած է միայն բարձր որակը
 					</p>

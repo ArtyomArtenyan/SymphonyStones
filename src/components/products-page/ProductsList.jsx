@@ -1,5 +1,5 @@
 import React from 'react';
-import Dot from '../../common/Dot/Dot';
+import { Dot } from '../';
 
 const ProductsList = ({ items }) => {
 	return (

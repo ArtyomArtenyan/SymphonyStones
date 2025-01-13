@@ -1,7 +1,6 @@
 import React from 'react';
+import { IconsButton } from '../..';
 import { Contact_Us_Section } from '../../../dataBase/data';
-import IconsButton from '../IconsButton/IconsButton';
-
 const ContactUsSection = ({ teg }) => {
 	return (
 		<div>

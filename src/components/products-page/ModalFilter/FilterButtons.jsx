@@ -1,5 +1,5 @@
 import React from 'react';
-import { products, productsType } from '../../../../dataBase/data';
+import { products, productsType } from '../../../dataBase/data';
 
 const FiltersButtons = ({
 	handleSizeSelectClick,

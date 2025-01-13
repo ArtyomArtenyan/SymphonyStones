@@ -1,7 +1,6 @@
 import React from 'react';
-import { About_Us_Hero_Section } from '../../../dataBase/data';
-import Dot from '../../common/Dot/Dot';
-
+import { Dot } from '../../components/';
+import { About_Us_Hero_Section } from '../../dataBase/data';
 const AboutUsHeroSection = () => {
 	return (
 		<div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { products } from '../../../../dataBase/data';
+import { products } from '../dataBase/data';
 
 const useFilteredProducts = (
 	selectedSizes,

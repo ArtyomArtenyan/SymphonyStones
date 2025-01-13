@@ -1,5 +1,6 @@
 import React from 'react';
-import { CloseIcon, FiltersButtons } from '../../../..';
+import { FilterButtons } from '../../';
+import { CloseIcon } from '../../../assets/svgs';
 
 const FilterModal = ({
 	toggleMenu,
@@ -23,7 +24,7 @@ const FilterModal = ({
 							<img src={CloseIcon} alt='' />
 						</button>
 					</div>
-					<FiltersButtons
+					<FilterButtons
 						handleSizeSelectClick={handleSizeSelectClick}
 						handleSelectedTypeClick={handleSelectedTypeClick}
 						selectedSizes={selectedSizes}

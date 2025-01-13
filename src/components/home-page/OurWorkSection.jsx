@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-	our_Work_Section,
-	our_Work_Section_title,
-} from '../../../dataBase/data';
-import { Dot } from '../../../index.js';
+import { Dot } from '../';
+import { our_Work_Section, our_Work_Section_title } from '../../dataBase/data';
 
 const OurWorkSection = () => {
 	return (

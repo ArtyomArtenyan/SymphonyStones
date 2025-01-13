@@ -1,6 +1,6 @@
 import React from 'react';
-import { settingIcon } from '../../../..';
-import Button from '../../../common/Button/Button';
+import { Button } from '../..';
+import { SettingIcon } from '../../../assets/svgs';
 
 const FilterButton = ({ toggleMenu }) => {
 	return (
@@ -9,7 +9,7 @@ const FilterButton = ({ toggleMenu }) => {
 				hendleClick={toggleMenu}
 				text={'Ֆիլտր'}
 				color={'primaryDarkBlue'}
-				icon={settingIcon}
+				icon={SettingIcon}
 			/>
 		</div>
 	);

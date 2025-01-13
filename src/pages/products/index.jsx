@@ -1,12 +1,12 @@
 import React from 'react';
-import { ContactSection } from '../../../index';
+import ProductsSection from '../../components/products-page/ProductsSection';
 
-const Contact = () => {
+const Products = () => {
 	return (
 		<div className='my-20 flex flex-col gap-20 px-[240px] max-w-2xl-1440:px-[100px] max-w-xl-1024:px-10  max-w-xl-1024:my-10 max-w-ss-480:px-5 '>
-			<ContactSection />
+			<ProductsSection />
 		</div>
 	);
 };
 
-export default Contact;
+export default Products;

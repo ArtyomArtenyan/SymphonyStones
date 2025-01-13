@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {
 	Dot,
-	FilterButton,
+	OpenFilterButton,
 	ProductsList,
 	ProductsPagination,
 	useFilteredProducts,
-} from '../../../index';
+} from '../';
 import FilterModal from './ModalFilter/FilterModal';
 
 const ProductsSection = () => {
@@ -91,11 +91,11 @@ const ProductsSection = () => {
 					<div className='flex h-[50vh] w-full items-center justify-center text-center max-w-ss-480::text-md'>
 						Նշված ֆիլտրերով արտադրանք առկա չէ
 					</div>
-					<FilterButton toggleMenu={toggleMenu} />
+					<OpenFilterButton toggleMenu={toggleMenu} />
 				</>
 			) : (
 				<>
-					<FilterButton toggleMenu={toggleMenu} />
+					<OpenFilterButton toggleMenu={toggleMenu} />
 					<ProductsList items={currentItems} />
 					<ProductsPagination
 						totalPages={totalPages}
