@@ -1,7 +1,21 @@
 import React from 'react';
 import { IconsButton } from '../..';
 import { Contact_Us_Section } from '../../../dataBase/data';
-const ContactUsSection = ({ teg }) => {
+interface ContactUsSetionProps {
+	teg: React.ReactNode;
+}
+type TypeSocialLink = {
+	id: number;
+	icon: string;
+	link: string;
+	text: string;
+};
+interface Contact_Us_Section {
+	title: string;
+	description: string;
+	socialLinks: TypeSocialLink[];
+}
+const ContactUsSection: React.FC<ContactUsSetionProps> = ({ teg }) => {
 	return (
 		<div>
 			<div className='flex  max-w-xl-1024:flex-col'>

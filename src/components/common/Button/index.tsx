@@ -1,6 +1,11 @@
 import React from 'react';
-
-const Button = ({ text, color, icon, hendleClick }) => {
+interface ButtonProps {
+	text: string;
+	color: string;
+	icon?: string;
+	hendleClick?: () => void;
+}
+const Button: React.FC<ButtonProps> = ({ text, color, icon, hendleClick }) => {
 	return (
 		<button
 			onClick={hendleClick}

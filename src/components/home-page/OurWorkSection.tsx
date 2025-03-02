@@ -1,8 +1,12 @@
 import React from 'react';
-import { Dot } from '../';
+import { Dot } from '..';
 import { our_Work_Section, our_Work_Section_title } from '../../dataBase/data';
 
-const OurWorkSection = () => {
+interface OurWorkSectionData {
+	our_Work_Section_title: string;
+	our_Work_Section: string[];
+}
+const OurWorkSection: React.FC = () => {
 	return (
 		<div className=' flex flex-col gap-10 mb-20 max-w-xl-1024:mb-10  '>
 			<div className='flex justify-center items-center gap-3 '>

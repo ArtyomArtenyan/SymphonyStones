@@ -4,6 +4,15 @@ import {
 	Why_Symphony_Stone_Section,
 	Why_Symphony_Stone_Section_title,
 } from '../../../dataBase/data';
+type Why_Symphony_Stone_Section = {
+	id: number;
+	icon: string;
+	description: string;
+};
+
+interface WhySymphonyStoneSectionProps {
+	Why_Symphony_Stone_Sections: Why_Symphony_Stone_Section[];
+}
 const WhySymphonyStoneSection = () => {
 	return (
 		<div>

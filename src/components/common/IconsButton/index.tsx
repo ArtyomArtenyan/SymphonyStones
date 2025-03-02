@@ -1,6 +1,9 @@
 import React from 'react';
-
-const IconsButton = ({ image, href }) => {
+interface IconsButtonProps {
+	image: string;
+	href?: string;
+}
+const IconsButton: React.FC<IconsButtonProps> = ({ image, href }) => {
 	let imgName = image.split('/');
 	// console.log(imgName[imgName.length - 1]);
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { DotIcon } from '../../../assets/svgs';
-const Dot = () => {
+const Dot: React.FC = () => {
 	return (
 		<div>
-			<img alt='elipse' width='8' height='8' src={DotIcon} />
+			<img src={DotIcon} alt='elipse' width='8' height='8' />
 		</div>
 	);
 };

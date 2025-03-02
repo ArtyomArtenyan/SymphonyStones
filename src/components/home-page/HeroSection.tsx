@@ -1,8 +1,15 @@
 import React from 'react';
-import { Button } from '../';
+import { Button } from '..';
 import { Hero_Section } from '../../dataBase/data';
 
-const HeroSection = () => {
+interface HeroSectionData {
+	title1: string;
+	title2: string;
+	description: string;
+	buttonText: string;
+	img: string;
+}
+const HeroSection: React.FC = () => {
 	return (
 		<div>
 			<div className='flex max-w-xl-1024:flex-col mb-20 max-w-xl-1024:mb-10 '>
@@ -21,7 +28,7 @@ const HeroSection = () => {
 					<img
 						className='absolute w-full h-full inset-0 object-cover'
 						src={Hero_Section.img}
-						alt=''
+						alt='hero-img'
 					/>
 				</div>
 			</div>

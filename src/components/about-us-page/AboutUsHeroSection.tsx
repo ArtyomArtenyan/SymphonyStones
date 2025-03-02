@@ -1,7 +1,12 @@
 import React from 'react';
-import { Dot } from '../../components/';
+import { Dot } from '..';
 import { About_Us_Hero_Section } from '../../dataBase/data';
-const AboutUsHeroSection = () => {
+interface AboutUsData {
+	pageName: string;
+	image: string;
+	description: string;
+}
+const AboutUsHeroSection: React.FC = () => {
 	return (
 		<div>
 			<div className='flex flex-col gap-10'>
