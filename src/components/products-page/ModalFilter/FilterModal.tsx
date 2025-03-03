@@ -1,8 +1,15 @@
 import React from 'react';
-import { FilterButtons } from '../../';
+import { FilterButtons } from '../..';
 import { CloseIcon } from '../../../assets/svgs';
-
-const FilterModal = ({
+interface FilterModalProps {
+	toggleMenu: () => void;
+	handleSizeSelectClick: (size: string) => void;
+	handleSelectedTypeClick: (type: string) => void;
+	selectedSizes: string[];
+	selectedTypes: string[];
+	handleClear: () => void;
+}
+const FilterModal: React.FC<FilterModalProps> = ({
 	toggleMenu,
 	handleSizeSelectClick,
 	handleSelectedTypeClick,

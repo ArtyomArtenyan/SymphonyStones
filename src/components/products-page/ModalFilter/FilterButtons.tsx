@@ -1,23 +1,35 @@
 import React from 'react';
 import { products, productsType } from '../../../dataBase/data';
-
-const FiltersButtons = ({
+interface FiltersButtonsProps {
+	handleSizeSelectClick: (size: string) => void;
+	handleSelectedTypeClick: (type: string) => void;
+	selectedSizes: string[];
+	selectedTypes: string[];
+}
+type TsizesOrNullArr = (string | null)[];
+const FiltersButtons: React.FC<FiltersButtonsProps> = ({
 	handleSizeSelectClick,
 	handleSelectedTypeClick,
 	selectedSizes,
 	selectedTypes,
 }) => {
-	let arr = [];
+	let arr: TsizesOrNullArr = [];
 	for (let i = 0; i < products.length; i++) {
-		if (Array.isArray(products[i].size)) {
-			for (let j = 0; j < products[i].size.length; j++) {
-				if (!arr.includes(products[i].size[j])) arr.push(products[i].size[j]);
+		const { size } = products[i];
+
+		if (Array.isArray(size)) {
+			for (let j = 0; j < size.length; j++) {
+				if (!arr.includes(size[j]) && size[j]) {
+					arr.push(size[j]);
+				}
 			}
-		} else {
-			if (!arr.includes(products[i].size)) arr.push(products[i].size);
+		} else if (size && !arr.includes(size)) {
+			arr.push(size);
 		}
 	}
-	let filteredArray = arr.filter(el => el);
+
+	let filteredArray = arr.filter(el => el) as string[];
+
 	return (
 		<div>
 			<div className='flex gap-2 flex-col'>

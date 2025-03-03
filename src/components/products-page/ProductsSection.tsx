@@ -5,7 +5,7 @@ import {
 	ProductsList,
 	ProductsPagination,
 	useFilteredProducts,
-} from '../';
+} from '..';
 import FilterModal from './ModalFilter/FilterModal';
 
 const ProductsSection = () => {
@@ -17,23 +17,23 @@ const ProductsSection = () => {
 	const indexOfLastItem = currentPage * itemsInPage;
 	const indexOfFirstItem = indexOfLastItem - itemsInPage;
 
-	const [selectedSizes, setSelectedSizes] = useState([]);
-	const [selectedTypes, setSelectedTypes] = useState([]);
+	const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
+	const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-	const filteredProducts = useFilteredProducts(
+	const filteredProducts = useFilteredProducts({
 		selectedSizes,
 		selectedTypes,
 		isOpen,
-		setLoading
-	);
+	});
 
 	const currentItems = filteredProducts.slice(
 		indexOfFirstItem,
 		indexOfLastItem
 	);
+
 	const totalPages = Math.ceil(filteredProducts.length / itemsInPage);
 
-	const changePages = pageNum => {
+	const changePages = (pageNum: number) => {
 		setCurrentPage(pageNum);
 		window.scrollTo({
 			top: 0,
@@ -46,14 +46,14 @@ const ProductsSection = () => {
 		document.body.style.overflow = isOpen ? 'auto' : 'hidden';
 	};
 
-	const handleSizeSelectClick = size => {
+	const handleSizeSelectClick = (size: string) => {
 		setSelectedSizes(prevSizes => {
 			if (prevSizes.includes(size)) return prevSizes.filter(el => el !== size);
 			else return [...prevSizes, size];
 		});
 	};
 
-	const handleSelectedTypeClick = name => {
+	const handleSelectedTypeClick = (name: string) => {
 		if (name === 'Բոլորը') {
 			setSelectedTypes(['Բոլորը']);
 		} else {
@@ -82,11 +82,7 @@ const ProductsSection = () => {
 				</h1>
 				<Dot />
 			</div>
-			{loading ? (
-				<div className='flex justify-center items-center h-[50vh]'>
-					<div className='loader'>Loading...</div>
-				</div>
-			) : filteredProducts.length === 0 ? (
+			{filteredProducts.length === 0 ? (
 				<>
 					<div className='flex h-[50vh] w-full items-center justify-center text-center max-w-ss-480::text-md'>
 						Նշված ֆիլտրերով արտադրանք առկա չէ

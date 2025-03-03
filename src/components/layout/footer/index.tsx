@@ -1,7 +1,7 @@
 import React from 'react';
 import { WhiteLogo } from '../../../assets/svgs';
 
-const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<div>
 			<div className='flex flex-col items-center justify-center bg-deepDarkBlue gap-10 px-[240px] py-10 max-w-xl-1024:p-10 max-w-xl-1024:gap-6'>

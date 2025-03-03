@@ -4,7 +4,7 @@ import { IconsButton } from '../..';
 import { BurgerMenuIcon, CloseIcon } from '../../../assets/svgs';
 import { nav, socialLinks } from '../../../dataBase/data.js';
 
-const BurgerMenu = () => {
+const BurgerMenu: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	function toggleMenu() {
 		setIsOpen(!isOpen);

@@ -1,7 +1,15 @@
 import React from 'react';
-import { Dot } from '../';
-
-const ProductsList = ({ items }) => {
+import { Dot } from '..';
+interface Product {
+	id: number;
+	name: string;
+	image: string;
+	size?: string | string[] | null;
+}
+interface ProductsListProps {
+	items: Product[];
+}
+const ProductsList: React.FC<ProductsListProps> = ({ items }) => {
 	return (
 		<div>
 			<div className='grid grid-cols-3 gap-x-4 gap-y-10 max-w-xl-1024:grid-cols-2 max-w-xl-1024:gap-y-6 max-w-ss-480:grid-cols-1'>
@@ -20,7 +28,7 @@ const ProductsList = ({ items }) => {
 								el.size.map((ele, i) => (
 									<div key={i} className='flex items-center gap-3'>
 										<p>{ele}</p>
-										{i !== el.size.length - 1 && <Dot />}
+										{i !== el.size!.length - 1 && <Dot />}
 									</div>
 								))
 							) : (

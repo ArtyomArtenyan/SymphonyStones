@@ -1,7 +1,15 @@
 import React from 'react';
-
-const ProductsPagination = ({ totalPages, currentPage, pageClick }) => {
-	const pageNumberArr = [];
+interface ProductsPaginationProps {
+	totalPages: number;
+	currentPage: number;
+	pageClick: (page: number) => void;
+}
+const ProductsPagination: React.FC<ProductsPaginationProps> = ({
+	totalPages,
+	currentPage,
+	pageClick,
+}) => {
+	const pageNumberArr: number[] = [];
 	for (let i = 1; i <= totalPages; i++) {
 		pageNumberArr.push(i);
 	}

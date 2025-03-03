@@ -19,7 +19,7 @@ const Home = () => {
 						<img
 							className='absolute w-full h-full inset-0 object-cover'
 							src={Contact_Us_Section.img}
-							alt=''
+							alt='Contact Us Background'
 						/>
 					}
 				/>
